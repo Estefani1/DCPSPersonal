@@ -8,14 +8,12 @@
             Realizar Calificacion:
             <table>
                 <tbody>
-
-
                     <tr>
                         <td><select name="idea" id="mySelect" onchange="myFunction()" >
                                 <option > Seleccione idea</option>
                                 {section loop=$idea name=i }
 
-                                    <option value="{$idea[i]->get('nombre')}">{$idea[i]->get('nombre')}</option> 
+                                    <option value="{$idea[i]->get(nombre)}">{$idea[i]->get(nombre)}</option> 
 
                                 {/section}
 
@@ -29,15 +27,15 @@
                     <tr>
                         <td>  
                             {section loop=$idea name=i }
-                                <a  class="idea_descripcion" id="idea_descripcion_{$idea[i]->get('nombre')}"> {$idea[i]->get('descripcion')}</a>                 
+                                <a  class="idea_descripcion" id="idea_descripcion_{$idea[i]->get(nombre)}">{$idea[i]->get(descripcion)}</a>                 
                             {/section}
 
                         </td>
                     </tr>
                     <tr>
-                    <tr>
+                    <tr class="nec" id="nece">
                         <td>
-                            <a  class="nec" id="nece"> Necesidad:</a> 
+                            <a> Necesidad:</a> 
                         </td>
                     </tr>
                     <tr>

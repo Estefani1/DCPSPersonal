@@ -132,7 +132,9 @@ class db {
                 switch ($options['lvl2']) {
                     case "insert":
                         $code = mysqli_real_escape_string($this->cn, $object->get('codigo'));
-                        $this->do_operation("INSERT INTO prediseno(`Codigo`) VALUES ($code);");
+                        $idea = mysqli_real_escape_string($this->cn, $object->get(idea));
+
+                        $this->do_operation("INSERT INTO `dbdcps`.`prediseno`(`codigo`,`idea`)VALUES('$code','$idea');");
                         break;
                 }
                 break;

@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.9, created on 2015-05-16 14:37:36
+<?php /* Smarty version Smarty-3.0.9, created on 2015-05-16 17:11:43
          compiled from "C:/wamp/www/ProyectoDCPS/templates\cu3-calificaridea.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:725955573a10dbf371-55453468%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1694355575e2f660752-10471856%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '2aa1c243d1c23e9a28dbcc254365e52e6dc77562' => 
     array (
       0 => 'C:/wamp/www/ProyectoDCPS/templates\\cu3-calificaridea.tpl',
-      1 => 1431779751,
+      1 => 1431789102,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '725955573a10dbf371-55453468',
+  'nocache_hash' => '1694355575e2f660752-10471856',
   'function' => 
   array (
   ),
@@ -28,8 +28,6 @@ cu3-calificaridea.php?option=calificar" method="post">
             Realizar Calificacion:
             <table>
                 <tbody>
-
-
                     <tr>
                         <td><select name="idea" id="mySelect" onchange="myFunction()" >
                                 <option > Seleccione idea</option>
@@ -98,16 +96,16 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['first']      = ($_smart
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total']);
 ?>
                                 <a  class="idea_descripcion" id="idea_descripcion_<?php echo $_smarty_tpl->getVariable('idea')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('nombre');?>
-"> <?php echo $_smarty_tpl->getVariable('idea')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('descripcion');?>
+"><?php echo $_smarty_tpl->getVariable('idea')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('descripcion');?>
 </a>                 
                             <?php endfor; endif; ?>
 
                         </td>
                     </tr>
                     <tr>
-                    <tr>
+                    <tr class="nec" id="nece">
                         <td>
-                            <a  class="nec" id="nece"> Necesidad:</a> 
+                            <a> Necesidad:</a> 
                         </td>
                     </tr>
                     <tr>

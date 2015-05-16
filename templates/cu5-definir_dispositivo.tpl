@@ -30,8 +30,7 @@
                         <select name="prediseno" id="mySelect" onchange="myFunction()" >
                             <option>Prediseno</option>
                             {section loop=$predis name=i }
-
-                                <option value= {$predis[i]->get(codigo)}>{$predis[i]->get('codigo')}</option>                 
+                                <option value="{$predis[i]->get(codigo)}">{$predis[i]->get('codigo')}</option>                 
                             {/section}
                         </select>
                     </td>
@@ -39,9 +38,8 @@
                 <tr  class="cideaprediseno" id="idideaprediseno">
                     <td><b>Idea del dispositivo:</b></td>
                     <td>
-
                         {section loop=$predis name=i }
-                            <a class="cidea" id="ididea_{$predis[i]->get('codigo')}"> {$predis[i]->get('idea')}</a>
+                            <a class="cidea" id="ididea_{$predis[i]->get(codigo)}"> {$predis[i]->get('idea')}</a>
                         {/section}
 
 

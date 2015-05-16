@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.9, created on 2015-05-16 14:57:19
+<?php /* Smarty version Smarty-3.0.9, created on 2015-05-16 17:01:09
          compiled from "C:/wamp/www/ProyectoDCPS/templates\opciones_analista.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1421655573eaf42b4e5-05464018%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2883655575bb5ea73c8-41524785%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'b91a7c403d48e00fa59e3a4951c185dc1684bd78' => 
     array (
       0 => 'C:/wamp/www/ProyectoDCPS/templates\\opciones_analista.tpl',
-      1 => 1431779912,
+      1 => 1431781705,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1421655573eaf42b4e5-05464018',
+  'nocache_hash' => '2883655575bb5ea73c8-41524785',
   'function' => 
   array (
   ),
@@ -21,7 +21,7 @@ $_smarty_tpl->decodeProperties(array (
 			<div class="col-md-2 ll menu">
 				<br/><a href="cu2-proponeridea.php"><div class="item">Proponer Idea</div></a><br/><br/>
 					<a href="cu3-calificaridea.php"><div class="item">Calificar idea</div></a><br/><br/>
-					<a href="Modificar_idea.php"><div class="item">Modificar Idea</div></a><br/><br/>
+					<a href="cu12-Modificar_idea.php"><div class="item">Modificar Idea</div></a><br/><br/>
 					<a href="Evaluar_viabilidad.php"><div class="item">Evaluar Viabilidad</div></a><br/>
 			</div>
 		

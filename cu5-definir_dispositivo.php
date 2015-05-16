@@ -5,6 +5,7 @@ require('configs/include.php');
 class c_definir_dispositivo extends super_controller {
 
     public function add() {
+        
         $dispositivo = new dispositivo($this->post);
         if (is_null($dispositivo->get('codigo'))) {
             $message1 = "Por favor ingrese el codigo";
