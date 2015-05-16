@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.9, created on 2015-05-16 14:47:11
+<?php /* Smarty version Smarty-3.0.9, created on 2015-05-16 15:29:20
          compiled from "C:/wamp/www/ProyectoDCPS/templates\cu5-definir_dispositivo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1598255573c4fee3ff2-49183765%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:811955574630ca5255-71790998%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '878f70a66e4ecda48f762d206aff2b977ec6eaa2' => 
     array (
       0 => 'C:/wamp/www/ProyectoDCPS/templates\\cu5-definir_dispositivo.tpl',
-      1 => 1431780384,
+      1 => 1431782955,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1598255573c4fee3ff2-49183765',
+  'nocache_hash' => '811955574630ca5255-71790998',
   'function' => 
   array (
   ),
@@ -45,10 +45,10 @@ cu5-definir_dispositivo.php?option=add" method="post">
                     </td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td><b>Seleccione el prediseño</b></td>
                     <td>
                         <select name="prediseno" id="mySelect" onchange="myFunction()" >
-                            <option>Seleccione el prediseño </option>
+                            <option>Prediseno</option>
                             <?php unset($_smarty_tpl->tpl_vars['smarty']->value['section']['i']);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'] = is_array($_loop=$_smarty_tpl->getVariable('predis')->value) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['name'] = 'i';

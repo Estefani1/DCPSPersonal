@@ -15,8 +15,12 @@ class c_definir_dispositivo extends super_controller {
         if (is_null($dispositivo->get('funcion'))) {
             $message3 = "Por favor ingrese la funcion";
         }
-        if (!is_empty($message1) || !is_empty($message2) || !is_empty($message3))
-            throw_exception($message1 . $message2 . $message3);
+        if (($dispositivo->get('prediseno') == "Prediseno")) {
+            $message4 = "Por favor seleccione el prediseno";
+        }
+        if (!is_empty($message1) || !is_empty($message2) || !is_empty($message3) || !is_empty($message4))
+            throw_exception($message1 . $message2 . $message3 . $message4);
+
         $this->orm->connect();
         $this->orm->insert_data("normal", $dispositivo);
         $this->orm->close();
@@ -25,7 +29,8 @@ class c_definir_dispositivo extends super_controller {
         $this->msg_warning = "Dispositivo definido correctamente";
         $this->temp_aux = 'message.tpl';
         $this->engine->assign('type_warning', $this->type_warning);
-        $this->engine->assign('msg_warning', $this->msg_warning);
+        $this->engine->assign('msg_warning', $this->msg_warning
+        );
     }
 
     public function selectprediseno() {
@@ -35,7 +40,6 @@ class c_definir_dispositivo extends super_controller {
         $predis = $this->orm->get_objects("prediseno");
         $this->orm->close();
         $this->engine->assign('predis', $predis);
-  
     }
 
     public function display() {
@@ -71,7 +75,8 @@ class c_definir_dispositivo extends super_controller {
 }
 
 $call = new c_definir_dispositivo();
-$call->run();
+$call->run
+();
 ?>
 
 

@@ -25,10 +25,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td><b>Seleccione el prediseño</b></td>
                     <td>
                         <select name="prediseno" id="mySelect" onchange="myFunction()" >
-                            <option>Seleccione el prediseño </option>
+                            <option>Prediseno</option>
                             {section loop=$predis name=i }
 
                                 <option value= {$predis[i]->get(codigo)}>{$predis[i]->get('codigo')}</option>                 

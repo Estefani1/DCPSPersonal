@@ -110,7 +110,8 @@ class db {
                         $codigo = mysqli_real_escape_string($this->cn, $object->get('codigo'));
                         $costo = mysqli_real_escape_string($this->cn, $object->get('costo'));
                         $funcion = mysqli_real_escape_string($this->cn, ($object->get('funcion')));
-                        $this->do_operation("INSERT INTO dispositivo (codigo, costo, funcion) VALUES ('$codigo', '$costo', '$funcion');");
+                        $prediseno = mysqli_real_escape_string($this->cn, ($object->get('prediseno')));
+                        $this->do_operation("INSERT INTO dispositivo (codigo, costo, funcion, prediseno) VALUES ('$codigo', '$costo', '$funcion','$prediseno');");
                         break;
                 }
                 break;
