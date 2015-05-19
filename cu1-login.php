@@ -14,24 +14,23 @@ class c_login extends super_controller {
         $options['cliente']['lvl2'] = "validar";
         $this->orm->connect();
         $this->orm->read_data(array("empleado", "cliente"), $options, $code);
+       
         $cliente = $this->orm->get_objects("cliente");
         $empleado = $this->orm->get_objects("empleado");
         $this->orm->close();
+        
         if (isset($cliente[0])) {
-
             $_SESSION['miembro'] = 'NULL';
             $_SESSION['identi'] = $cliente[0]->get('identificacion');
-
-
             $_SESSION['id'] = $cliente[0]->get('identificacion');
             $_SESSION['tipo1'] = "cliente";
-            $_SESSION['header'] = 'Location: proponeridea.php';
+            $_SESSION['header'] = 'Location: cu2-proponeridea.php';
             $this->session = $_SESSION;
-            header('Location: proponeridea.php');
+            header('Location: cu2-proponeridea.php');
         } elseif (isset($empleado[0]) && $hasher->CheckPassword($this->post->Contrasena, $empleado[0]->get('contrasena'))) {
             
             $_SESSION['miembro'] = $empleado[0]->get('cedula');
-            $_SESSION['identi'] = 'NULL';
+          $_SESSION['identi'] = 'NULL';
 
 
             $_SESSION['id'] = $empleado[0]->get('cedula');

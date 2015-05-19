@@ -17,10 +17,16 @@ class idea extends object_standard {
 
     //data about the attributes
     public function metadata() {
-        return array("nombre" => array(), "descripcion" => array(), "etapa" => array(), "necesidad" => array("foreign_name" => "n_i",
-                "foreign" => "necesidad", "foreign_attribute" => "codigo"), "cliente" => array("foreign_name" => "c_i",
-                "foreign" => "cliente", "foreign_attribute" => "identificacion"), "miembro" => array("foreign_name" => "m_i",
-                "foreign" => "empleado", "foreign_attribute" => "cedula"), "reunion" => array("foreign_name" => "r_i",
+        return array("nombre" => array(),
+            "descripcion" => array(),
+            "etapa" => array(),
+            "necesidad" => array("foreign_name" => "n_i",
+                "foreign" => "necesidad", "foreign_attribute" => "codigo"),
+            "cliente" => array("foreign_name" => "c_i",
+                "foreign" => "cliente", "foreign_attribute" => "identificacion"),
+            "miembro" => array("foreign_name" => "m_i",
+                "foreign" => "empleado", "foreign_attribute" => "cedula"),
+            "reunion" => array("foreign_name" => "r_i",
                 "foreign" => "reunion", "foreign_attribute" => "codigo"));
     }
 
@@ -31,37 +37,33 @@ class idea extends object_standard {
     public function relational_keys($class, $rel_name) {
         switch ($class) {
             case "necesidad":
-                    switch($rel_name)
-                    {
-                        case "n_i":
+                switch ($rel_name) {
+                    case "n_i":
                         return array("necesidad");
                         break;
-                    }
-                    break;
+                }
+                break;
             case "cliente":
-                    switch($rel_name)
-                    {
-                        case "c_i":
+                switch ($rel_name) {
+                    case "c_i":
                         return array("cliente");
                         break;
-                    }
-                    break;
+                }
+                break;
             case "miembro":
-                    switch($rel_name)
-                    {
-                        case "m_i":
+                switch ($rel_name) {
+                    case "m_i":
                         return array("miembro");
                         break;
-                    }
-                    break;
+                }
+                break;
             case "reunion":
-                    switch($rel_name)
-                    {
-                        case "r_i":
+                switch ($rel_name) {
+                    case "r_i":
                         return array("reunion");
                         break;
-                    }
-                    break;
+                }
+                break;
             default:
                 break;
         }

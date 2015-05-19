@@ -3,8 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/ProyectoDCPS/templates/cu3-calificaridea.tpl</file>
-            <file>file:/C:/wamp/www/ProyectoDCPS/templates/cu5-definir_dispositivo.tpl</file>
+            <file>file:/C:/wamp/www/ProyectoDCPS/cu2-proponeridea.php</file>
+            <file>file:/C:/wamp/www/ProyectoDCPS/classes/prediseno.php</file>
+            <file>file:/C:/wamp/www/ProyectoDCPS/cu9-Registrar_prediseno.php</file>
+            <file>file:/C:/wamp/www/ProyectoDCPS/modules/db.php</file>
+            <file>file:/C:/wamp/www/ProyectoDCPS/classes/idea.php</file>
+            <file>file:/C:/wamp/www/ProyectoDCPS/cu1-login.php</file>
         </group>
     </open-files>
 </project-private>

@@ -115,6 +115,17 @@ class db {
                         break;
                 }
                 break;
+                case "software":
+                switch ($options['lvl2']) {
+                    case "normal":
+                        $codigo = mysqli_real_escape_string($this->cn, $object->get('codigo'));
+                        $lenguaje= mysqli_real_escape_string($this->cn, $object->get('lenguaje'));
+                        $prediseno = mysqli_real_escape_string($this->cn, ($object->get('prediseno')));
+                        $this->do_operation("INSERT INTO software (codigo, lenguaje, prediseno) VALUES ('$codigo', '$lenguaje','$prediseno');");
+                        break;
+                }
+                break;
+
 
             case "diseno":
                 switch ($options['lvl2']) {
@@ -133,9 +144,14 @@ class db {
                     case "insert":
                         $code = mysqli_real_escape_string($this->cn, $object->get('codigo'));
                         $idea = mysqli_real_escape_string($this->cn, $object->get(idea));
+                        // $miembro = mysqli_real_escape_string($this->cn, $object->get('miembro'));
 
-                        $this->do_operation("INSERT INTO `dbdcps`.`prediseno`(`codigo`,`idea`)VALUES('$code','$idea');");
-                        break;
+                        $miembro = $_SESSION['miembro'];
+
+                        if (isset($miembro)) {
+                            $this->do_operation("INSERT INTO `dbdcps`.`prediseno`(`codigo`,`idea`,`especialista` )VALUES('$code','$idea','$miembro');");
+                            break;
+                        }
                 }
                 break;
 
@@ -153,6 +169,7 @@ class db {
                                             VALUES ('$nombre', '$descripcion', '$etapa', '$necesidad', '$miembro');");
                             break;
                         } else {
+
                             $cliente = mysqli_real_escape_string($this->cn, $object->get('cliente'));
                             $this->do_operation("INSERT INTO idea (nombre, descripcion, etapa, necesidad, miembro, cliente) 
                                             VALUES ('$nombre', '$descripcion', '$etapa', '$necesidad', '$miembro', '$cliente');");

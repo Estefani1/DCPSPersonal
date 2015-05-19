@@ -16,6 +16,8 @@ class c_Registrar_prediseno extends super_controller {
         if (!is_empty($message1) || !is_empty($message2))
             throw_exception($message1 . $message2);
 
+
+              
         $pred = new prediseno($this->post);
         $this->orm->connect();
         $this->orm->insert_data("insert", $pred);
