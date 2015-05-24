@@ -389,9 +389,6 @@ class db {
                         $info = $this->get_data("SELECT * FROM dispositivo;");
                         break;
                     case "detalle" :
-                        $pre = mysqli_real_escape_string($this->cn, $data['prediseno']);
-                        // $info = $this->get_data("SELECT t1.* FROM dispositivo AS t1 INNER JOIN viabilidad AS t2 ON t1.prediseno = t2.prediseno and t1.prediseno='$pre';");
-
                         $info = $this->get_data("SELECT t1.* FROM dispositivo AS t1 INNER JOIN viabilidad AS t2 ON t1.prediseno = t2.prediseno ;");
 
                         break;

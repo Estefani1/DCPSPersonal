@@ -25,10 +25,7 @@ class c_calificar_prediseno extends super_controller {
         $this->engine->assign('msg_warning', $this->msg_warning);
     }
 
-    public function funprueba() {
-        echo 'aa';
-        //  echo $this->post->resultado;
-    }
+  
 
     public function display() {
 
