@@ -382,6 +382,7 @@ class db {
                         break;
                 }
                 break;
+
             case "dispositivo":
                 switch ($option['lvl2']) {
                     case "all" :
