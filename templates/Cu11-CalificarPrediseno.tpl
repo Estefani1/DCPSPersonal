@@ -2,6 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <html>
     <script lang="javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/cu11-calificarprediseno.js" ></script>
     <body>    
         <form action="{$gvar.l__global}Cu11-CalificarPrediseno.php?option=calificar" method="post" name="calificar">
             <b>Código del prediseño: </b>
@@ -50,52 +51,7 @@
                     </div>
                 {/section}
             </section>
-            <script>
-                function myFunction() {
-                    var x = $("#mySelect").val();
 
-                    $('.res_viabilidad').hide();
-                    $('#res_viabilidad_' + x).show();
-
-                    $('.res_causa').hide();
-                    $('#res_causa_' + x).show();
-
-                    $('.cdetalle').hide();
-                    $('#iddetalle').show();
-
-                    $('[id-prediseno]').hide();
-
-                    // $('.cmasdetalle').hide();
-                }
-                function detalles() {
-                    var x = $("#mySelect").val();
-
-                    //   $('.cmasdetalle').hide();
-
-                    $('[id-prediseno]').hide();
-                    $('[id-prediseno="' + x + '"]').show();
-                    /*   $('#idmasdetalle').show();
-                     
-                     $('.res_sof').hide();
-                     $('#res_sof_' + x).show();
-                     
-                     $('.res_len').hide();
-                     $('#res_len_' + x).show();
-                     
-                     $('.res_disp').hide();
-                     $('#res_disp_' + x).show();
-                     
-                     $('.res_cosd').hide();
-                     $('#res_cosd_' + x).show();
-                     
-                     $('.res_fund').hide();
-                     $('#res_fund_' + x).show();*/
-                }
-                $(document).ready(function () {
-                    $('.cdetalle').hide();
-                    $('[id-prediseno]').hide();
-                });
-            </script>
         </form>
     </body>
 </html>

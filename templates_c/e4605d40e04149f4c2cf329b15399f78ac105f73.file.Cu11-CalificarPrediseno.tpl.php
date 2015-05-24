@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.9, created on 2015-05-24 23:46:52
+<?php /* Smarty version Smarty-3.0.9, created on 2015-05-24 23:59:29
          compiled from "C:/wamp/www/ProyectoDCPS/templates\Cu11-CalificarPrediseno.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:22379556246cc014838-49784949%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2694556249c13f5ec2-98013923%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'e4605d40e04149f4c2cf329b15399f78ac105f73' => 
     array (
       0 => 'C:/wamp/www/ProyectoDCPS/templates\\Cu11-CalificarPrediseno.tpl',
-      1 => 1432504010,
+      1 => 1432504763,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '22379556246cc014838-49784949',
+  'nocache_hash' => '2694556249c13f5ec2-98013923',
   'function' => 
   array (
   ),
@@ -21,6 +21,7 @@ $_smarty_tpl->decodeProperties(array (
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <html>
     <script lang="javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/cu11-calificarprediseno.js" ></script>
     <body>    
         <form action="<?php echo $_smarty_tpl->getVariable('gvar')->value['l__global'];?>
 Cu11-CalificarPrediseno.php?option=calificar" method="post" name="calificar">
@@ -198,52 +199,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
                     </div>
                 <?php endfor; endif; ?>
             </section>
-            <script>
-                function myFunction() {
-                    var x = $("#mySelect").val();
 
-                    $('.res_viabilidad').hide();
-                    $('#res_viabilidad_' + x).show();
-
-                    $('.res_causa').hide();
-                    $('#res_causa_' + x).show();
-
-                    $('.cdetalle').hide();
-                    $('#iddetalle').show();
-
-                    $('[id-prediseno]').hide();
-
-                    // $('.cmasdetalle').hide();
-                }
-                function detalles() {
-                    var x = $("#mySelect").val();
-
-                    //   $('.cmasdetalle').hide();
-
-                    $('[id-prediseno]').hide();
-                    $('[id-prediseno="' + x + '"]').show();
-                    /*   $('#idmasdetalle').show();
-                     
-                     $('.res_sof').hide();
-                     $('#res_sof_' + x).show();
-                     
-                     $('.res_len').hide();
-                     $('#res_len_' + x).show();
-                     
-                     $('.res_disp').hide();
-                     $('#res_disp_' + x).show();
-                     
-                     $('.res_cosd').hide();
-                     $('#res_cosd_' + x).show();
-                     
-                     $('.res_fund').hide();
-                     $('#res_fund_' + x).show();*/
-                }
-                $(document).ready(function () {
-                    $('.cdetalle').hide();
-                    $('[id-prediseno]').hide();
-                });
-            </script>
         </form>
     </body>
 </html>
