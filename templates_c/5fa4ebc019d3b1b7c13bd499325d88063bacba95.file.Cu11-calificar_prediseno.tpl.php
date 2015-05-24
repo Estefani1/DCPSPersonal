@@ -1,34 +1,60 @@
-<?php /* Smarty version Smarty-3.0.9, created on 2015-05-24 20:46:32
-         compiled from "C:/wamp/www/ProyectoDCPS/templates\Cu11-CalificarPrediseno.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:587455621c8856a4e0-31589951%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.0.9, created on 2015-05-24 07:08:17
+         compiled from "C:/wamp/www/ProyectoDCPS/templates\Cu11-calificar_prediseno.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:2520455615cc1260217-88826049%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'e4605d40e04149f4c2cf329b15399f78ac105f73' => 
+    '5fa4ebc019d3b1b7c13bd499325d88063bacba95' => 
     array (
-      0 => 'C:/wamp/www/ProyectoDCPS/templates\\Cu11-CalificarPrediseno.tpl',
-      1 => 1432493189,
+      0 => 'C:/wamp/www/ProyectoDCPS/templates\\Cu11-calificar_prediseno.tpl',
+      1 => 1432432070,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '587455621c8856a4e0-31589951',
+  'nocache_hash' => '2520455615cc1260217-88826049',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
 )); /*/%%SmartyHeaderCode%%*/?>
-
-<!--Para usar la ñ-->
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <html>
     <script lang="javascript" src="js/jquery-2.1.3.min.js"></script>
     <body>    
         <form action="<?php echo $_smarty_tpl->getVariable('gvar')->value['l__global'];?>
-Cu11-CalificarPrediseno.php?option=calificar" method="post" name="calificar">
+cu11-calificar_prediseno.php?option=calificar" method="post" name="calificar">
+
+            <?php unset($_smarty_tpl->tpl_vars['smarty']->value['section']['i']);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'] = is_array($_loop=$_smarty_tpl->getVariable('dispositivo')->value) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['name'] = 'i';
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['show'] = true;
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['max'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['step'] = 1;
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['start'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['step'] > 0 ? 0 : $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop']-1;
+if ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['show']) {
+    $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'];
+    if ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total'] == 0)
+        $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['show'] = false;
+} else
+    $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total'] = 0;
+if ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['show']):
+
+            for ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['start'], $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] = 1;
+                 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] <= $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total'];
+                 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index'] += $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['step'], $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration']++):
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['rownum'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index_prev'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index'] - $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['step'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index_next'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index'] + $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['step'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == 1);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total']);
+?>
+                <option> codigo del dispositivo: <?php echo $_smarty_tpl->getVariable('dispositivo')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('codigo');?>
+</option>
+            <?php endfor; endif; ?><br />
 
             <table>
                 <tbody>
-                <b>Codigo del prediseño: </b>
+                    ssss
+                <b>Cï¿½digo del prediseï¿½o: </b>
                 <select name="codigo" id="mySelect" onchange="myFunction()">
                     <option > seleccione codigo</option>
                     <?php unset($_smarty_tpl->tpl_vars['smarty']->value['section']['i']);
@@ -128,6 +154,9 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
 </a>                 
                         <?php endfor; endif; ?>
                         <br /><br />
+
+
+
                         <input type="button" value="Mas detalle:" onclick="detalles()"><br />
                 <dt class="det" id="detc">
                 <?php unset($_smarty_tpl->tpl_vars['smarty']->value['section']['i']);
@@ -301,26 +330,26 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
                 function detalles() {
                     var x = $("#mySelect").val();
 
-                    // $('.det').hide();
+                    $('.det').hide();
                     $('#detc').show();
 
-                    //   $('.res_sof').hide();
+                    $('.res_sof').hide();
                     $('#res_sof_' + x).show();
 
-                    //   $('.res_len').hide();
+                    $('.res_len').hide();
                     $('#res_len_' + x).show();
 
-                    //   $('.res_disp').hide();
+                    $('.res_disp').hide();
                     $('#res_disp_' + x).show();
 
-                    //    $('.res_cosd').hide();
+                    $('.res_cosd').hide();
                     $('#res_cosd_' + x).show();
 
-                    //     $('.res_fund').hide();
+                    $('.res_fund').hide();
                     $('#res_fund_' + x).show();
                 }
                 $(document).ready(function () {
-
+                    $('.res_viabilidad').hide();
                     $('.des').hide();
                     $('.des1').hide();
                     $('.det').hide();

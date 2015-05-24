@@ -6,9 +6,8 @@ class c_evaluar_viabilidad extends super_controller {
 
     //protected $pr;
     public function add() {
+        echo $this->post->resultado;
         $viabilidad = new viabilidad($this->post);
-
-
         if (is_null($viabilidad->get('codigo'))) {
             $message1 = "Por favor ingrese el codigo";
         }
@@ -32,7 +31,7 @@ class c_evaluar_viabilidad extends super_controller {
 
         $this->orm->connect();
 
-         $this->orm->insert_data("normal", $viabilidad);
+        $this->orm->insert_data("normal", $viabilidad);
         $this->orm->read_data(array("prediseno"), $options, $cod);
         $prediseno = $this->orm->get_objects("prediseno");
 
@@ -49,8 +48,9 @@ class c_evaluar_viabilidad extends super_controller {
         $idea->etapa = $this->post->resultado;
 
         $idea1 = new idea($idea);
-        $this->orm->update_data("modificable", $idea1);
-     
+        if ($this->post->resultado == "Modificable") {
+            $this->orm->update_data("modificable", $idea1);
+        }
         $this->orm->close();
 
 

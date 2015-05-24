@@ -20,11 +20,34 @@ class c_calificar_prediseno extends super_controller {
             $this->engine->assign('msg_warning',  $this->msg_warning);
 	}
     public function display() {
-       
+        $option['viabilidad']['lvl2']="all";
+        $option1['dispositivo']['lvl2']="detalle";
+        $option2['software']['lvl2']="detalle";
+        
+        $this->orm->connect();
+        $this->orm->read_data(array("viabilidad"),$option);
+        $viabilidad = $this->orm->get_objects("viabilidad");
+        $this->orm->read_data(array("dispositivo"),$option1);
+        $dispositivo = $this->orm->get_objects("dispositivo");
+        $this->orm->read_data(array("software"),$option2);
+        $software = $this->orm->get_objects("software");
+        $this->orm->close();
+        
+        if(!isset($viabilidad)){
+            $this->error=1;  $this->msg_warning="No hay prediseños para calificar";
+            $this->engine->assign('type_warning',$this->type_warning);
+            $this->engine->assign('msg_warning',$this->msg_warning);
+            $this->temp_aux = 'message.tpl';
+            header('Location: opciones_gerente.php');
+            }
+            
+        $this->engine->assign('viabilidad', $viabilidad);
+        $this->engine->assign('dispositivo', $dispositivo);
+        $this->engine->assign('software', $software);
         $this->engine->assign('title', 'calificar prediseño');
      
         $this->engine->display($this->temp_aux);
-        $this->engine->display('cu11-calificar_prediseno.tpl');
+        $this->engine->display('Cu11-CalificarPrediseno.tpl');
     }
     public function run() {
         try {if(!isset($this->session['id'])){

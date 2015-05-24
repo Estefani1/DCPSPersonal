@@ -230,7 +230,7 @@ class db {
                         $this->escape_string($object);
                         $nombre = $object->get('nombre');
                         $etapa = $object->get('etapa');
-                    
+
                         $this->do_operation("UPDATE idea SET etapa = '$etapa' WHERE nombre = '$nombre';");
                         break;
                 }
@@ -344,7 +344,7 @@ class db {
 
                     case "all":
                         $code = mysqli_real_escape_string($this->cn, $data['codigo']);
-                        
+
                         $info = $this->get_data("SELECT * FROM `prediseno` where `Codigo`='$code';");
                         break;
 
@@ -387,6 +387,13 @@ class db {
                     case "all" :
                         $info = $this->get_data("SELECT * FROM dispositivo;");
                         break;
+                    case "detalle" :
+                        $pre = mysqli_real_escape_string($this->cn, $data['prediseno']);
+                        // $info = $this->get_data("SELECT t1.* FROM dispositivo AS t1 INNER JOIN viabilidad AS t2 ON t1.prediseno = t2.prediseno and t1.prediseno='$pre';");
+
+                        $info = $this->get_data("SELECT t1.* FROM dispositivo AS t1 INNER JOIN viabilidad AS t2 ON t1.prediseno = t2.prediseno ;");
+
+                        break;
                 }
                 break;
 
@@ -394,6 +401,9 @@ class db {
                 switch ($option['lvl2']) {
                     case "all" :
                         $info = $this->get_data("SELECT * FROM software;");
+                        break;
+                    case "detalle" :
+                        $info = $this->get_data("SELECT t1.* FROM software AS t1 INNER JOIN viabilidad AS t2 ON t1.prediseno = t2.prediseno;");
                         break;
                 }
                 break;
