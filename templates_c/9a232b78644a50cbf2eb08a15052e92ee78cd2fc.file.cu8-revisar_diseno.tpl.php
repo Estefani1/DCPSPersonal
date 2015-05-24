@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.0.9, created on 2015-05-16 14:54:36
+<?php /* Smarty version Smarty-3.0.9, created on 2015-05-23 23:48:19
          compiled from "C:/wamp/www/ProyectoDCPS/templates\cu8-revisar_diseno.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:502955573e0c58da79-21226669%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_smarty_tpl->decodeProperties(array (
     '9a232b78644a50cbf2eb08a15052e92ee78cd2fc' => 
     array (
       0 => 'C:/wamp/www/ProyectoDCPS/templates\\cu8-revisar_diseno.tpl',
-      1 => 1431780874,
+      1 => 1431780876,
       2 => 'file',
     ),
   ),

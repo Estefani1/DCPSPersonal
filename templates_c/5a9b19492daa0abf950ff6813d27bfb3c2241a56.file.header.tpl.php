@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.0.9, created on 2015-05-08 17:33:57
+<?php /* Smarty version Smarty-3.0.9, created on 2015-05-23 22:13:40
          compiled from "C:/wamp/www/ProyectoDCPS/templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:567355417bc990fdc6-31459965%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_smarty_tpl->decodeProperties(array (
     '5a9b19492daa0abf950ff6813d27bfb3c2241a56' => 
     array (
       0 => 'C:/wamp/www/ProyectoDCPS/templates\\header.tpl',
-      1 => 1430851688,
+      1 => 1430851690,
       2 => 'file',
     ),
   ),

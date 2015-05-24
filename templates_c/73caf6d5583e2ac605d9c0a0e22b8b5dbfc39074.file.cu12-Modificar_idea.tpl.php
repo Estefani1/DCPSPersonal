@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.0.9, created on 2015-05-16 15:08:43
+<?php /* Smarty version Smarty-3.0.9, created on 2015-05-24 00:37:30
          compiled from "C:/wamp/www/ProyectoDCPS/templates\cu12-Modificar_idea.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:206995557415b68c370-79604341%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_smarty_tpl->decodeProperties(array (
     '73caf6d5583e2ac605d9c0a0e22b8b5dbfc39074' => 
     array (
       0 => 'C:/wamp/www/ProyectoDCPS/templates\\cu12-Modificar_idea.tpl',
-      1 => 1431781669,
+      1 => 1431781670,
       2 => 'file',
     ),
   ),

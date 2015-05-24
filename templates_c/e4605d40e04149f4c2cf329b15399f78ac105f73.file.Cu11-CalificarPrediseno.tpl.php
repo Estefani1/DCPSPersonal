@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.9, created on 2015-05-23 23:49:11
-         compiled from "C:/wamp/www/ProyectoDCPS/templates\cu11-calificar_prediseno.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1920755574030050b22-70040354%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.0.9, created on 2015-05-24 00:00:32
+         compiled from "C:/wamp/www/ProyectoDCPS/templates\Cu11-CalificarPrediseno.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:193715560f880398d43-83954491%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '3782f6d542d06fa5a9289b857091a14539729757' => 
+    'e4605d40e04149f4c2cf329b15399f78ac105f73' => 
     array (
-      0 => 'C:/wamp/www/ProyectoDCPS/templates\\cu11-calificar_prediseno.tpl',
-      1 => 1431781420,
+      0 => 'C:/wamp/www/ProyectoDCPS/templates\\Cu11-CalificarPrediseno.tpl',
+      1 => 1432418428,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1920755574030050b22-70040354',
+  'nocache_hash' => '193715560f880398d43-83954491',
   'function' => 
   array (
   ),
@@ -21,7 +21,7 @@ $_smarty_tpl->decodeProperties(array (
     <script lang="javascript" src="js/jquery-2.1.3.min.js"></script>
     <body>    
         <form action="<?php echo $_smarty_tpl->getVariable('gvar')->value['l__global'];?>
-cu11-calificar_prediseno.php?option=calificar" method="post">
+Cu11-CalificarPrediseno.php?option=calificar" method="post">
 
             <table>
                 <tbody>
@@ -128,7 +128,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
                             <input type="button" value="Mas detalle:" onclick="detalles()"><br />
                             <dt class="det" id="detc">
                                 <?php unset($_smarty_tpl->tpl_vars['smarty']->value['section']['i']);
-$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'] = is_array($_loop=$_smarty_tpl->getVariable('viabilidad2')->value) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'] = is_array($_loop=$_smarty_tpl->getVariable('software')->value) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['name'] = 'i';
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['show'] = true;
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['max'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'];
@@ -151,12 +151,12 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index_next'] = $_smarty
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == 1);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total']);
 ?>
-                                    <a  class="res_sof" id="res_sof_<?php echo $_smarty_tpl->getVariable('viabilidad2')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('prediseno');?>
+                                    <a  class="res_sof" id="res_sof_<?php echo $_smarty_tpl->getVariable('software')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('prediseno');?>
 " > codigo de software: <?php echo $_smarty_tpl->getVariable('software')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('codigo');?>
 </a>
                                 <?php endfor; endif; ?><br />
                                 <?php unset($_smarty_tpl->tpl_vars['smarty']->value['section']['i']);
-$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'] = is_array($_loop=$_smarty_tpl->getVariable('viabilidad2')->value) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'] = is_array($_loop=$_smarty_tpl->getVariable('software')->value) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['name'] = 'i';
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['show'] = true;
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['max'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'];
@@ -179,12 +179,12 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index_next'] = $_smarty
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == 1);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total']);
 ?>
-                                    <a  class="res_len" id="res_len_<?php echo $_smarty_tpl->getVariable('viabilidad2')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('prediseno');?>
+                                    <a  class="res_len" id="res_len_<?php echo $_smarty_tpl->getVariable('software')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('prediseno');?>
 " > lenguaje del software: <?php echo $_smarty_tpl->getVariable('software')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('lenguaje');?>
 </a>
                                 <?php endfor; endif; ?><br />
                                 <?php unset($_smarty_tpl->tpl_vars['smarty']->value['section']['i']);
-$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'] = is_array($_loop=$_smarty_tpl->getVariable('viabilidad3')->value) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'] = is_array($_loop=$_smarty_tpl->getVariable('dispositivo')->value) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['name'] = 'i';
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['show'] = true;
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['max'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'];
@@ -207,12 +207,12 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index_next'] = $_smarty
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == 1);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total']);
 ?>
-                                    <a  class="res_disp" id="res_disp_<?php echo $_smarty_tpl->getVariable('viabilidad3')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('prediseno');?>
+                                    <a  class="res_disp" id="res_disp_<?php echo $_smarty_tpl->getVariable('dispositivo')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('prediseno');?>
 " > codigo del dispositivo: <?php echo $_smarty_tpl->getVariable('dispositivo')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('codigo');?>
 </a>
                                 <?php endfor; endif; ?><br />
                                 <?php unset($_smarty_tpl->tpl_vars['smarty']->value['section']['i']);
-$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'] = is_array($_loop=$_smarty_tpl->getVariable('viabilidad3')->value) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'] = is_array($_loop=$_smarty_tpl->getVariable('dispositivo')->value) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['name'] = 'i';
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['show'] = true;
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['max'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'];
@@ -235,12 +235,12 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index_next'] = $_smarty
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == 1);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total']);
 ?>
-                                    <a  class="res_cosd" id="res_cosd_<?php echo $_smarty_tpl->getVariable('viabilidad3')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('prediseno');?>
+                                    <a  class="res_cosd" id="res_cosd_<?php echo $_smarty_tpl->getVariable('dispositivo')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('prediseno');?>
 " > costo del dispositivo: <?php echo $_smarty_tpl->getVariable('dispositivo')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('costo');?>
 </a>
                                 <?php endfor; endif; ?><br />
                                 <?php unset($_smarty_tpl->tpl_vars['smarty']->value['section']['i']);
-$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'] = is_array($_loop=$_smarty_tpl->getVariable('viabilidad3')->value) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'] = is_array($_loop=$_smarty_tpl->getVariable('dispositivo')->value) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['name'] = 'i';
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['show'] = true;
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['max'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['loop'];
@@ -263,7 +263,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['index_next'] = $_smarty
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == 1);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['i']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['total']);
 ?>
-                                    <a  class="res_fund" id="res_fund_<?php echo $_smarty_tpl->getVariable('viabilidad3')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('prediseno');?>
+                                    <a  class="res_fund" id="res_fund_<?php echo $_smarty_tpl->getVariable('dispositivo')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('prediseno');?>
 " > funcion del dispositivo: <?php echo $_smarty_tpl->getVariable('dispositivo')->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]->get('funcion');?>
 </a>
                                 <?php endfor; endif; ?>
@@ -284,7 +284,6 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
                     var x = $("#mySelect").val();
                     $('.res_viabilidad').hide();
                     $('#res_viabilidad_' + x).show();
-
                     $('.des').hide();
                     $('#desc').show();
                     

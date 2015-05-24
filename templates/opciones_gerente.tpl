@@ -5,5 +5,5 @@
         <br/><a href="cu2-proponeridea.php"><div class="item">Proponer Idea</div></a><br/><br/>
         <a href="cu3-calificaridea.php"><div class="item">Calificar Idea</div></a><br/><br/>
         <a href="cu4-Programar_reunion.php"><div class="item">Programar Reunion</div></a><br/><br/>
-        <a href="cu11-Calificar_Prediseno.php"><div class="item">Calificar Prediseno</div></a><br/>
+        <a href="cu11-calificar_prediseno.php"><div class="item">Calificar Prediseno</div></a><br/>
     </div>

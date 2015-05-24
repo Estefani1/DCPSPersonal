@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.0.9, created on 2015-05-19 21:20:52
+<?php /* Smarty version Smarty-3.0.9, created on 2015-05-24 00:26:52
          compiled from "C:/wamp/www/ProyectoDCPS/templates\opciones_arquitecto.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:21413555b8d14858f89-12517330%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_smarty_tpl->decodeProperties(array (
     '3ff88b6e29eebc49e97cc4e63a623e0b9add4933' => 
     array (
       0 => 'C:/wamp/www/ProyectoDCPS/templates\\opciones_arquitecto.tpl',
-      1 => 1432063248,
+      1 => 1432063250,
       2 => 'file',
     ),
   ),
