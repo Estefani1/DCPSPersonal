@@ -5,7 +5,6 @@ require('configs/include.php');
 class c_realizar_diseno extends super_controller {
 
     public function add() {
-
         if (is_empty($this->post->codigo)) {
             $message1 = "Por favor ingrese el codigo";
         }
@@ -17,7 +16,6 @@ class c_realizar_diseno extends super_controller {
         }
         if (!is_empty($message1) || !is_empty($message2) || !is_empty($message3))
             throw_exception($message1 . $message2 . $message3);
-
 
         settype($disen, 'object');
         $disen->codigo = $this->post->codigo;
