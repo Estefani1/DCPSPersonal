@@ -130,10 +130,12 @@ class db {
             case "diseno":
                 switch ($options['lvl2']) {
                     case "normal":
+
                         $codigo = mysqli_real_escape_string($this->cn, $object->get('codigo'));
                         $imagen = mysqli_real_escape_string($this->cn, $object->get('imagen'));
                         $dispositivo = mysqli_real_escape_string($this->cn, ($object->get('dispositivo')));
-                        $this->do_operation("INSERT INTO diseno (codigo, imagen, dispositivo) VALUES ('$codigo', '$imagen', '$dispositivo');");
+                        $software = mysqli_real_escape_string($this->cn, ($object->get('software')));
+                        $this->do_operation("INSERT INTO diseno (codigo, imagen, dispositivo, software) VALUES ('$codigo', '$imagen', '$dispositivo', '$software');");
                         break;
                 }
                 break;

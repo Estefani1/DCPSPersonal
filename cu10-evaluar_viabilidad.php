@@ -6,7 +6,7 @@ class c_evaluar_viabilidad extends super_controller {
 
     //protected $pr;
     public function add() {
-        echo $this->post->resultado;
+
         $viabilidad = new viabilidad($this->post);
         if (is_null($viabilidad->get('codigo'))) {
             $message1 = "Por favor ingrese el codigo";
